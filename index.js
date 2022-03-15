@@ -93,7 +93,11 @@ async function main2(companyName,tableData,fileNames,fileDict) {
 // console.log(files[q])
 
 }
-message +=  '</table>';
+ message +=(  '</table>'+
+'<div style="text-align: center;">'+
+'<h4 style="text-align: center;color: gray;font-size: 20px;">Regards,</h4>'+
+'<h4 style="text-align: center;color: black;font-size: 20px;">Team ValidateMe.Online</h4>'+
+'</div>');
   let testAccount = await nodemailer.createTestAccount();
 
   let transporter = nodemailer.createTransport({
