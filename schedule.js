@@ -9,7 +9,7 @@ process.title = 'daily-email'
 
 
 
-const task = cron.schedule('16 14 * * *', function () {
+const task = cron.schedule(process.env.TIME, function () {
   try {
     main()
 
